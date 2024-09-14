@@ -3,7 +3,7 @@ class WhiteModel extends TypeModel{
         const Type = this.TypeNum;
         const Year = this.Year;
         const Month = this.Month;
-        let result = 120 - ((Year*12) + Month);
+        let result = 120 - ((Year*12) + Month); //calculate
         if(Type != 1){
             return 0;
         }

@@ -38,7 +38,9 @@ class CowController {
             this.View.displayAlert(White, Brown, Pink);
         
         } catch (error) {
+            //clear inputs
             this.View.clearInputs();
+            //show error
             this.View.displayError(error.message);
         }
     }
@@ -48,6 +50,7 @@ class CowController {
         if (!this.Model.isCowInDatabase(CowCode)) throw new Error("Cow not in Database!!!");
     }
 
+    //Number to String    
     getColorName(value) {
         switch (value) {
             case 1:

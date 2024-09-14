@@ -1,7 +1,7 @@
 //Cow Object
 class Cow{
     constructor(CowCode, Year, Month, Type, TypeNum){
-        if (!this.LegitCheck(CowCode, Year, Month, TypeNum)) throw new Error("That 's Cow not Real");
+        if (!this.LegitCheck(CowCode, Year, Month, TypeNum)) throw new Error("That 's Cow not Real"); //check error
         this.CowCode = CowCode;
         this.Year = Year;
         this.Month = Month;
