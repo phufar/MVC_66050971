@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Farm</title>
+    <!-- Import Everything -->
+    <script src="../Control/Control.js"></script>
+    <script src="../Model/Cow.js"></script>
+    <script src="../Model/DataCow.js"></script>
+    <script src="../Model/Model.js"></script>
+    <script src="../Model/TypeModel/TypeModel.js"></script>
+    <script src="../Model/TypeModel/WhiteModel.js"></script>
+    <script src="../Model/TypeModel/BrownModel.js"></script>
+    <script src="../Model/TypeModel/PinkModel.js"></script>
+    <script src="View.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        input, select {
+            width: calc(100% - 22px); /* Full width minus padding */
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #Result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="CowCode">Cow Code:</label>
+        <input id="CowCode" name="CowCode">
+        <label for="Year">Year:</label>
+        <input id="Year" name="Year">
+        <label for="Month">Month:</label>
+        <input id="Month" name="Month">
+        <label for="Type">Type:</label>
+        <select id="Type" name="Type">
+            <option value="1">White</option>
+            <option value="2">Brown</option>
+            <option value="3">Pink</option>
+        </select>
+        <button id="Submit" name="Submit">Submit</button>
+        <div id="Result"></div>
+    </div>
+</body>
+</html>
